@@ -1,413 +1,298 @@
-<p align="center">
-  <img src="examples/logo.svg" alt="RunAnywhere Logo" width="140"/>
-</p>
-
-<h1 align="center">RunAnywhere</h1>
-
-<p align="center">
-  <strong>On-device AI for every platform.</strong><br/>
-  Run LLMs, speech-to-text, and text-to-speech locally — private, offline, fast.
-</p>
-
-<p align="center">
-  <a href="https://apps.apple.com/us/app/runanywhere/id6756506307">
-    <img src="https://img.shields.io/badge/App_Store-Download-0D96F6?style=for-the-badge&logo=apple&logoColor=white" alt="Download on App Store" />
-  </a>
-  &nbsp;
-  <a href="https://play.google.com/store/apps/details?id=com.runanywhere.runanywhereai">
-    <img src="https://img.shields.io/badge/Google_Play-Download-34A853?style=for-the-badge&logo=google-play&logoColor=white" alt="Get it on Google Play" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/RunanywhereAI/runanywhere-sdks/stargazers"><img src="https://img.shields.io/github/stars/RunanywhereAI/runanywhere-sdks?style=flat-square" alt="GitHub Stars" /></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue?style=flat-square" alt="License" /></a>
-  <a href="https://discord.gg/N359FBbDVd"><img src="https://img.shields.io/badge/Discord-Join-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord" /></a>
-</p>
-
-## See It In Action
+<a id="readme-top"></a>
 
 <div align="center">
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <img src="docs/gifs/text-generation.gif" alt="Text Generation" width="240"/><br/><br/>
-      <strong>Text Generation</strong><br/>
-      <sub>LLM inference — 100% on-device</sub>
-    </td>
-    <td width="40"></td>
-    <td align="center" width="50%">
-      <img src="docs/gifs/voice-ai.gif" alt="Voice AI" width="240"/><br/><br/>
-      <strong>Voice AI</strong><br/>
-      <sub>STT → LLM → TTS pipeline — fully offline</sub>
-    </td>
-  </tr>
-  <tr><td colspan="3" height="30"></td></tr>
-  <tr>
-    <td align="center" width="50%">
-      <img src="docs/gifs/image-generation.gif" alt="Image Generation" width="240"/><br/><br/>
-      <strong>Image Generation</strong><br/>
-      <sub>On-device diffusion model</sub>
-    </td>
-    <td width="40"></td>
-    <td align="center" width="50%">
-      <img src="docs/gifs/visual-language-model.gif" alt="Visual Language Model" width="240"/><br/><br/>
-      <strong>Visual Language Model</strong><br/>
-      <sub>Vision + language understanding on-device</sub>
-    </td>
-  </tr>
-</table>
+
+# Memesync AI
+
+**AI-powered on-chain analytics, wallet intelligence, research agents, and Jupiter-powered swaps for Solana**
+
+[![Web App](https://img.shields.io/badge/Web%20App-Open-3b82f6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://твоя-web-app-ссылка)
+[![Telegram Mini App](https://img.shields.io/badge/Telegram%20Mini%20App-Launch-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/твой_мини_апп)
+[![Docs](https://img.shields.io/badge/Docs-Read-8b5cf6?style=for-the-badge&logo=readthedocs&logoColor=white)](https://твои-docs-ссылка)
+[![X.com](https://img.shields.io/badge/X.com-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/твой_аккаунт)
+[![Telegram Community](https://img.shields.io/badge/Telegram%20Community-Join-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/твоя_группа_или_канал)
+
 </div>
 
 ---
 
-## What is RunAnywhere?
-
-RunAnywhere lets you add AI features to your app that run entirely on-device:
-
-- **LLM Chat** — Llama, Mistral, Qwen, SmolLM, and more
-- **Speech-to-Text** — Whisper-powered transcription
-- **Text-to-Speech** — Neural voice synthesis
-- **Voice Assistant** — Full STT → LLM → TTS pipeline
-
-No cloud. No latency. No data leaves the device.
-
----
-
-## SDKs
-
-| Platform | Status | Installation | Documentation |
-|----------|--------|--------------|---------------|
-| **Swift** (iOS/macOS) | Stable | [Swift Package Manager](#swift-ios--macos) | [docs.runanywhere.ai/swift](https://docs.runanywhere.ai/swift/introduction) |
-| **Kotlin** (Android) | Stable | [Gradle](#kotlin-android) | [docs.runanywhere.ai/kotlin](https://docs.runanywhere.ai/kotlin/introduction) |
-| **Web** (Browser) | Beta | [npm](#web-browser) | [SDK README](sdk/runanywhere-web/) |
-| **React Native** | Beta | [npm](#react-native) | [docs.runanywhere.ai/react-native](https://docs.runanywhere.ai/react-native/introduction) |
-| **Flutter** | Beta | [pub.dev](#flutter) | [docs.runanywhere.ai/flutter](https://docs.runanywhere.ai/flutter/introduction) |
+<p align="center">
+  <a href="#overview">Overview</a>
+  ·
+  <a href="#demo-first">Demo First</a>
+  ·
+  <a href="#try-it-now">Try It Now</a>
+  ·
+  <a href="#what-youll-see">What You’ll See</a>
+  ·
+  <a href="#why-people-pick-it">Why People Pick It</a>
+  ·
+  <a href="#popular-use-cases">Popular Use Cases</a>
+  ·
+  <a href="#examples">Examples</a>
+  ·
+  <a href="#go-deeper">Go Deeper</a>
+</p>
 
 ---
 
-## Quick Start
+> [!IMPORTANT]
+> Memesync AI works across the Web App, Telegram Mini App, and browser extension with one wallet-based account and one shared credit balance
 
-### Swift (iOS / macOS)
+## Overview
 
-```swift
-import RunAnywhere
-import LlamaCPPRuntime
+Memesync AI is a Solana-first trading intelligence platform built for fast token due diligence, wallet behavior analysis, AI-driven research, and direct swaps through Jupiter. It helps users move from raw on-chain noise to readable signals, risk views, and actionable context without juggling multiple disconnected tools.
 
-// 1. Initialize
-LlamaCPP.register()
-try RunAnywhere.initialize()
+> [!TIP]
+> The fastest path through the product is simple: analyze a token or wallet, review the AI summary, then move straight into a Jupiter-powered swap when the setup makes sense
 
-// 2. Load a model
-try await RunAnywhere.downloadModel("smollm2-360m")
-try await RunAnywhere.loadModel("smollm2-360m")
+### Product Snapshot
 
-// 3. Generate
-let response = try await RunAnywhere.chat("What is the capital of France?")
-print(response) // "Paris is the capital of France."
+| Layer | What it does | Where it appears |
+|---|---|---|
+| Token Analytics | Reads liquidity, volume, holder concentration, flows, and risk flags | Web App, Telegram Mini App, Browser Extension |
+| Wallet Analytics | Profiles PnL, win rate, drawdowns, behavior, and trader style | Web App, Telegram Mini App, Browser Extension |
+| AI Agents | Converts raw metrics into summaries, scores, pros, cons, and research digests | Web App, Telegram Mini App, API |
+| Swaps via Jupiter | Routes Solana swaps from insight to execution | Web App, Browser Extension |
+| Credits & Plans | Powers analytics usage across all product surfaces | Shared across all interfaces |
+
+### System Flow
+
+```text
+Token / Wallet Input
+        ↓
+On-chain + market data processing
+        ↓
+Analytics Agent or Research Agent
+        ↓
+Readable summary, scores, and risk context
+        ↓
+Bookmark, monitor, automate, or swap via Jupiter
 ```
 
-**Install via Swift Package Manager:**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Demo First
+
+A typical Memesync workflow looks like this: you spot a token in Telegram or on a DEX, open it in Memesync, get an instant read on liquidity, holder structure, and short-term behavior, then decide whether the opportunity deserves deeper attention or a direct swap through Jupiter.
+
+> [!NOTE]
+> The product is in active development, so feature depth, limits, and supported surfaces may expand as the platform evolves
+
+### What the experience is designed to feel like
+
+| Step | User action | Visible output |
+|---|---|---|
+| 1 | Paste token or wallet | Clean analytics card with core metrics |
+| 2 | Run AI analysis | Summary, positives, negatives, and score |
+| 3 | Open deeper view | Expanded token or wallet breakdown |
+| 4 | Decide next move | Bookmark, alert, research, or swap |
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Try It Now
+
+Get something useful in seconds through the API layer
+
+```bash
+curl -X POST https://api.memesync.ai/v1/agents/run \
+  -H "X-API-Key: YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "agent_id": "token_analytics",
+    "params": {
+      "network": "solana",
+      "token_address": "TOKEN_ADDRESS_HERE"
+    }
+  }'
 ```
-https://github.com/RunanywhereAI/runanywhere-sdks
+
+```bash
+curl -X GET https://api.memesync.ai/v1/jobs/job_123456789 \
+  -H "X-API-Key: YOUR_API_KEY"
 ```
 
-[Full documentation →](https://docs.runanywhere.ai/swift/introduction) · [Source code](sdk/runanywhere-swift/)
-
----
-
-### Kotlin (Android)
-
-```kotlin
-import com.runanywhere.sdk.public.RunAnywhere
-import com.runanywhere.sdk.public.extensions.*
-
-// 1. Initialize
-LlamaCPP.register()
-RunAnywhere.initialize(environment = SDKEnvironment.DEVELOPMENT)
-
-// 2. Load a model
-RunAnywhere.downloadModel("smollm2-360m").collect { println("${it.progress * 100}%") }
-RunAnywhere.loadLLMModel("smollm2-360m")
-
-// 3. Generate
-val response = RunAnywhere.chat("What is the capital of France?")
-println(response) // "Paris is the capital of France."
+```bash
+curl -X POST https://api.memesync.ai/v1/agents/run \
+  -H "X-API-Key: YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "agent_id": "wallet_analytics",
+    "params": {
+      "network": "solana",
+      "wallet_address": "WALLET_ADDRESS_HERE"
+    }
+  }'
 ```
 
-**Install via Gradle:**
+> [!WARNING]
+> Agent runs consume credits and production requests use real account balances, so sandbox or low-risk testing should come first when you wire Memesync into bots or automations
 
-```kotlin
-dependencies {
-    implementation("com.runanywhere.sdk:runanywhere-kotlin:0.16.1")
-    implementation("com.runanywhere.sdk:runanywhere-core-llamacpp:0.16.1")
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## What You’ll See
+
+Memesync is designed to return readable answers, not just raw dashboards. Instead of making users parse multiple explorers and charts, the platform compresses the state of a token or wallet into a concise view that can be acted on quickly.
+
+### Typical outputs
+
+| Output type | What the user gets |
+|---|---|
+| Token summary | Liquidity, volume, holder concentration, flows, and AI risk context |
+| Wallet profile | PnL shape, win rate, drawdowns, style labels, and behavior notes |
+| Research digest | Short project or narrative summary with relevant risks and events |
+| Swap handoff | Direct path into Jupiter-powered execution on Solana |
+| Cross-platform sync | Shared credits, saved tokens, watched wallets, and plan visibility |
+
+### Example result shape
+
+```json
+{
+  "summary": "Decent liquidity and active buyer flow, but holder concentration remains elevated",
+  "positives": ["Healthy 24h volume", "Consistent buyer activity"],
+  "negatives": ["Top holders control a large share", "Short-term volatility is high"],
+  "risk_score": 0.68,
+  "opportunity_score": 0.72
 }
 ```
 
-[Full documentation →](https://docs.runanywhere.ai/kotlin/introduction) · [Source code](sdk/runanywhere-kotlin/)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
----
+## Why People Pick It
 
-### React Native
+Memesync AI is built for users who want speed without giving up context
 
-```typescript
-import { RunAnywhere, SDKEnvironment } from '@runanywhere/core';
-import { LlamaCPP } from '@runanywhere/llamacpp';
+- Fast path from token discovery to risk-aware execution
+- Shared account, credits, and history across web, Telegram, and extension
+- AI summaries that reduce raw on-chain noise into readable decisions
 
-// 1. Initialize
-await RunAnywhere.initialize({ environment: SDKEnvironment.Development });
-LlamaCPP.register();
+### Why the model is sticky
 
-// 2. Load a model
-await RunAnywhere.downloadModel('smollm2-360m');
-await RunAnywhere.loadModel('smollm2-360m');
+| Advantage | Why it matters |
+|---|---|
+| Solana-first focus | Cleaner product logic and tighter execution flow |
+| Wallet-based identity | No fragmented accounts across clients |
+| Credits model | Clear cost per action before a run starts |
+| Jupiter integration | Analysis and swap flow stay close together |
+| API + webhooks | Easy to plug into bots, dashboards, and no-code systems |
 
-// 3. Generate
-const response = await RunAnywhere.chat('What is the capital of France?');
-console.log(response); // "Paris is the capital of France."
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Popular Use Cases
+
+### 1. Token due diligence before entry
+Check whether a meme token has enough liquidity, healthy flow, and acceptable concentration before taking size
+
+### 2. Wallet intelligence and smart money filtering
+Profile any wallet to see whether it is disciplined, lucky, reckless, or worth tracking more closely
+
+### 3. News-aware trading context
+Run the Research Agent to understand whether recent hype is backed by actual events, ecosystem movement, or hidden risk
+
+### 4. Automation workflows
+Trigger Memesync from bots, internal dashboards, n8n, Zapier, or custom assistants using the same agent system and job pattern
+
+> [!CAUTION]
+> Memesync provides analytics, summaries, and workflow tooling, not financial advice, and all swaps remain irreversible on-chain actions once you confirm them in your wallet
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Examples
+
+### Token analytics run
+
+```json
+{
+  "agent_id": "token_analytics",
+  "params": {
+    "network": "solana",
+    "token_address": "TOKEN_ADDRESS_HERE"
+  }
+}
 ```
 
-**Install via npm:**
+### Wallet analytics run
 
-```bash
-npm install @runanywhere/core @runanywhere/llamacpp
+```json
+{
+  "agent_id": "wallet_analytics",
+  "params": {
+    "network": "solana",
+    "wallet_address": "WALLET_ADDRESS_HERE"
+  }
+}
 ```
 
-[Full documentation →](https://docs.runanywhere.ai/react-native/introduction) · [Source code](sdk/runanywhere-react-native/)
+### Research digest run
 
----
-
-### Flutter
-
-```dart
-import 'package:runanywhere/runanywhere.dart';
-import 'package:runanywhere_llamacpp/runanywhere_llamacpp.dart';
-
-// 1. Initialize
-await RunAnywhere.initialize();
-await LlamaCpp.register();
-
-// 2. Load a model
-await RunAnywhere.downloadModel('smollm2-360m');
-await RunAnywhere.loadModel('smollm2-360m');
-
-// 3. Generate
-final response = await RunAnywhere.chat('What is the capital of France?');
-print(response); // "Paris is the capital of France."
+```json
+{
+  "agent_id": "token_research",
+  "params": {
+    "network": "solana",
+    "token_address": "TOKEN_ADDRESS_HERE"
+  }
+}
 ```
 
-**Install via pub.dev:**
+### Core API pattern
 
-```yaml
-dependencies:
-  runanywhere: ^0.16.0
-  runanywhere_llamacpp: ^0.16.0  # LLM text generation
-  # runanywhere_onnx: ^0.16.0   # Add this if you need STT, TTS, or Voice features
+```text
+POST /v1/agents/run
+        ↓
+Receive job_id and estimated credit cost
+        ↓
+GET /v1/jobs/{id}
+        ↓
+Read completed result or failed error
 ```
 
-[Full documentation →](https://docs.runanywhere.ai/flutter/introduction) · [Source code](sdk/runanywhere-flutter/)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
----
+## Go Deeper
 
-### Web (Browser)
+### Credits & Plans
 
-```typescript
-import { RunAnywhere, TextGeneration } from '@runanywhere/web';
+Memesync uses a simple credits model across all product surfaces. Credits are included in plans and can also be topped up with the $MEMESYNC utility token. The economic logic is transparent: when credits are purchased with $MEMESYNC, 80% is burned and 20% is routed to treasury.
 
-// 1. Initialize
-await RunAnywhere.initialize({ environment: 'development' });
+| Plan | Best for | Access level |
+|---|---|---|
+| Free | Trial and light usage | Core analytics with tight limits |
+| Starter | Active individual traders | More regular token and wallet analysis |
+| Pro | Daily users and bot operators | API access, higher limits, more research |
+| Elite | Funds, desks, and deep integrations | High-volume usage, advanced automation, priority support |
 
-// 2. Load a model
-await TextGeneration.loadModel('/models/qwen2.5-0.5b-instruct-q4_0.gguf', 'qwen2.5-0.5b');
+### Security & Privacy
 
-// 3. Generate
-const result = await TextGeneration.generate('What is the capital of France?');
-console.log(result.text); // "Paris is the capital of France."
+Memesync follows a non-custodial model. Users connect a wallet, sign in, and approve every on-chain action themselves. The platform does not hold seed phrases, private keys, or silent spending rights.
+
+| Security area | Memesync approach |
+|---|---|
+| Custody | Non-custodial by design |
+| Wallet permissions | Read access plus user-approved transaction prompts |
+| API auth | API key based authentication |
+| Webhook security | HMAC signature verification and timestamp checks |
+| Stored data | Wallet identity, usage logs, preferences, analytics history, billing references |
+| Not stored | Seed phrases, private keys, direct custody over funds |
+
+### API & Integrations
+
+The external developer surface is intentionally simple
+
+- `POST /v1/agents/run` to start an agent job
+- `GET /v1/jobs/{id}` to poll status and fetch results
+- Webhooks for `job.completed` and `job.failed`
+- Shared usage model across UI, bots, dashboards, and no-code workflows
+
+### Multi-Surface Product Design
+
+```text
+Web App            → full terminal and deeper analysis
+Telegram Mini App  → fast mobile checks and shareable summaries
+Browser Extension  → contextual token and wallet insights while browsing
+API + Webhooks     → bots, automations, dashboards, and custom assistants
 ```
 
-**Install via npm:**
+For deeper documentation, advanced configuration, and future chain support, use the Docs link at the top of this repository.
 
-```bash
-npm install @runanywhere/web
-```
-
-[Full documentation →](sdk/runanywhere-web/) · [Source code](sdk/runanywhere-web/)
-
----
-
-## Sample Apps
-
-Full-featured demo applications demonstrating SDK capabilities:
-
-| Platform | Source Code | Download |
-|----------|-------------|----------|
-| iOS | [examples/ios/RunAnywhereAI](examples/ios/RunAnywhereAI/) | [App Store](https://apps.apple.com/us/app/runanywhere/id6756506307) |
-| Android | [examples/android/RunAnywhereAI](examples/android/RunAnywhereAI/) | [Google Play](https://play.google.com/store/apps/details?id=com.runanywhere.runanywhereai) |
-| Web | [examples/web/RunAnywhereAI](examples/web/RunAnywhereAI/) | Build from source |
-| React Native | [examples/react-native/RunAnywhereAI](examples/react-native/RunAnywhereAI/) | Build from source |
-| Flutter | [examples/flutter/RunAnywhereAI](examples/flutter/RunAnywhereAI/) | Build from source |
-
----
-
-## Starter Examples
-
-Minimal starter projects to get up and running with RunAnywhere on each platform:
-
-| Platform | Repository |
-|----------|------------|
-| Kotlin (Android) | [RunanywhereAI/kotlin-starter-example](https://github.com/RunanywhereAI/kotlin-starter-example) |
-| Swift (iOS) | [RunanywhereAI/swift-starter-example](https://github.com/RunanywhereAI/swift-starter-example) |
-| Flutter | [RunanywhereAI/flutter-starter-example](https://github.com/RunanywhereAI/flutter-starter-example) |
-| React Native | [RunanywhereAI/react-native-starter-app](https://github.com/RunanywhereAI/react-native-starter-app) |
-
----
-
-## Playground
-
-Real-world projects built with RunAnywhere that push the boundaries of on-device AI. Each one ships as a standalone app you can build and run.
-
-### [Android Use Agent](Playground/android-use-agent/)
-
-A fully on-device autonomous Android agent that controls your phone. Give it a goal like "Open YouTube and search for lofi music" and it reads the screen via the Accessibility API, reasons about the next action with an on-device LLM (Qwen3-4B), and executes taps, swipes, and text input -- all without any cloud calls. Includes a Samsung foreground boost that delivers a 15x inference speedup, smart pre-launch via Android intents, and loop detection with automatic recovery. Benchmarked across four LLM models on a Galaxy S24. **[Full benchmarks](Playground/android-use-agent/ASSESSMENT.md)**
-
-### [On-Device Browser Agent](Playground/on-device-browser-agent/)
-
-A Chrome extension that automates browser tasks entirely on-device using WebLLM and WebGPU. Uses a two-agent architecture -- a Planner that breaks down goals into steps and a Navigator that interacts with page elements -- with both DOM-based and vision-based page understanding. Includes site-specific workflows for Amazon, YouTube, and more. All AI inference runs locally on your GPU after the initial model download.
-
-### [Swift Starter App](Playground/swift-starter-app/)
-
-A full-featured iOS app demonstrating the RunAnywhere SDK's core AI capabilities in a clean SwiftUI interface. Includes LLM chat with on-device language models, Whisper-powered speech-to-text, neural text-to-speech, and a complete voice pipeline that chains STT, LLM, and TTS together with voice activity detection. A good starting point for building privacy-first AI features on iOS.
-
-### [Linux Voice Assistant](Playground/linux-voice-assistant/)
-
-A complete on-device voice AI pipeline for Linux (Raspberry Pi 5, x86_64, ARM64). Say "Hey Jarvis" to activate, speak naturally, and get responses -- all running locally with zero cloud dependency. Chains Wake Word detection (openWakeWord), Voice Activity Detection (Silero VAD), Speech-to-Text (Whisper Tiny EN), LLM reasoning (Qwen2.5 0.5B Q4), and Text-to-Speech (Piper neural TTS) in a single C++ binary.
-
-### [OpenClaw Hybrid Assistant](Playground/openclaw-hybrid-assistant/)
-
-A hybrid voice assistant that keeps latency-sensitive components on-device (wake word, VAD, STT, TTS) while routing reasoning to a cloud LLM via OpenClaw WebSocket. Supports barge-in (interrupt TTS by saying the wake word), waiting chimes for cloud response feedback, and noise-robust VAD with burst filtering. Built for scenarios where on-device LLMs are too slow but you still want private audio processing.
-
----
-
-## Features
-
-| Feature | iOS | Android | Web | React Native | Flutter |
-|---------|-----|---------|-----|--------------|---------|
-| LLM Text Generation | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Streaming | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Speech-to-Text | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Text-to-Speech | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Voice Assistant Pipeline | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Vision Language Models | ✅ | — | ✅ | — | — |
-| Model Download + Progress | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Structured Output (JSON) | ✅ | ✅ | ✅ | 🔜 | 🔜 |
-| Tool Calling | ✅ | ✅ | ✅ | — | — |
-| Embeddings | — | — | ✅ | — | — |
-| Apple Foundation Models | ✅ | — | — | — | — |
-
----
-
-## Supported Models
-
-### LLM (GGUF format via llama.cpp)
-
-| Model | Size | RAM Required | Use Case |
-|-------|------|--------------|----------|
-| SmolLM2 360M | ~400MB | 500MB | Fast, lightweight |
-| Qwen 2.5 0.5B | ~500MB | 600MB | Multilingual |
-| Llama 3.2 1B | ~1GB | 1.2GB | Balanced |
-| Mistral 7B Q4 | ~4GB | 5GB | High quality |
-
-### Speech-to-Text (Whisper via ONNX)
-
-| Model | Size | Languages |
-|-------|------|-----------|
-| Whisper Tiny | ~75MB | English |
-| Whisper Base | ~150MB | Multilingual |
-
-### Text-to-Speech (Piper via ONNX)
-
-| Voice | Size | Language |
-|-------|------|----------|
-| Piper US English | ~65MB | English (US) |
-| Piper British English | ~65MB | English (UK) |
-
----
-
-## Repository Structure
-
-```
-runanywhere-sdks/
-├── sdk/
-│   ├── runanywhere-swift/          # iOS/macOS SDK
-│   ├── runanywhere-kotlin/         # Android SDK
-│   ├── runanywhere-web/            # Web SDK (WebAssembly)
-│   ├── runanywhere-react-native/   # React Native SDK
-│   ├── runanywhere-flutter/        # Flutter SDK
-│   └── runanywhere-commons/        # Shared C++ core
-│
-├── examples/
-│   ├── ios/RunAnywhereAI/          # iOS sample app
-│   ├── android/RunAnywhereAI/      # Android sample app
-│   ├── web/RunAnywhereAI/          # Web sample app
-│   ├── react-native/RunAnywhereAI/ # React Native sample app
-│   └── flutter/RunAnywhereAI/      # Flutter sample app
-│
-├── Playground/
-│   ├── swift-starter-app/          # iOS AI playground app
-│   ├── on-device-browser-agent/    # Chrome browser automation agent
-│   ├── android-use-agent/          # On-device autonomous Android agent
-│   ├── linux-voice-assistant/      # Linux on-device voice assistant
-│   └── openclaw-hybrid-assistant/  # Hybrid voice assistant (on-device + cloud)
-│
-└── docs/                           # Documentation
-```
-
----
-
-## Requirements
-
-| Platform | Minimum | Recommended |
-|----------|---------|-------------|
-| iOS | 17.0+ | 17.0+ |
-| macOS | 14.0+ | 14.0+ |
-| Android | API 24 (7.0) | API 28+ |
-| Web | Chrome 96+ / Edge 96+ | Chrome 120+ |
-| React Native | 0.74+ | 0.76+ |
-| Flutter | 3.10+ | 3.24+ |
-
-**Memory:** 2GB minimum, 4GB+ recommended for larger models
-
----
-
-## Contributing
-
-We welcome contributions. See our [Contributing Guide](CONTRIBUTING.md) for details.
-
-```bash
-# Clone the repo
-git clone https://github.com/RunanywhereAI/runanywhere-sdks.git
-
-# Set up a specific SDK (example: Swift)
-cd runanywhere-sdks/sdk/runanywhere-swift
-./scripts/build-swift.sh --setup
-
-# Run the sample app
-cd ../../examples/ios/RunAnywhereAI
-open RunAnywhereAI.xcodeproj
-```
-
----
-
-## Support
-
-- **Discord:** [Join our community](https://discord.gg/N359FBbDVd)
-- **GitHub Issues:** [Report bugs or request features](https://github.com/RunanywhereAI/runanywhere-sdks/issues)
-- **Email:** founders@runanywhere.ai
-- **Twitter:** [@RunanywhereAI](https://twitter.com/RunanywhereAI)
-
----
-
-## License
-
-Apache 2.0 — see [LICENSE](LICENSE) for details.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
